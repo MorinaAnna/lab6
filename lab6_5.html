@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кількість тегів</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #CADABA;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #68a8e0;
+        }
+        pre {
+            text-align: left;
+            display: inline-block;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><button>Повернутися</button></a>
+    </header>
+    <h1>Підрахунок тегів</h1>
+    <button onclick="displayTagCounts()">Показати кількість тегів</button>
+    <h2>Результат:</h2>
+    <pre id="result"></pre>
+    <script src="lab6_5.js"></script>
+</body>
+</html>

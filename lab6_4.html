@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клас Client</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            width: 250px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #CADABA;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #68a8e0;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><button>Повернутися</button></a>
+    </header>
+    <h1>Клас Client</h1>
+    <div>
+        <label for="login">Введіть логін:</label><br>
+        <input id="login" type="text" placeholder="Логін" />
+    </div>
+    <div>
+        <label for="email">Введіть email:</label><br>
+        <input id="email" type="email" placeholder="Email" />
+    </div>
+    <button onclick="createClient()">Створити клієнта</button>
+    <h2>Результат:</h2>
+    <p id="result"></p>
+    <script src="lab6_4.js"></script>
+</body>
+</html>

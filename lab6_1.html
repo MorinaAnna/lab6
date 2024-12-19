@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Створення продуктів</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #CADABA;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #68a8e0;
+        }
+        input {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><button>Повернутися</button></a>
+    </header>
+    <h1>Створення продуктів</h1>
+    <div>
+        <input id="productName" type="text" placeholder="Назва продукту" />
+        <input id="productPrice" type="number" placeholder="Ціна продукту (грн)" />
+        <input id="productQuantity" type="number" placeholder="Кількість" />
+    </div>
+    <button onclick="createExampleProduct()">Створити продукт</button>
+    <h2>Список створених продуктів:</h2>
+    <ul id="productList"></ul>
+    <p id="result"></p>
+    <script src="lab6_1.js"></script>
+</body>
+</html>
